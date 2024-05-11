@@ -1,0 +1,69 @@
+:root {
+    --backgroundColor: rgba(246, 241, 209);
+    --colorShadeA: rgb(106, 163, 137);
+    --colorShadeB: rgb(121, 186, 156);
+    --colorShadeC: rgb(150, 232, 195);
+    --colorShadeD: rgb(187, 232, 211);
+    --colorShadeE: rgb(205, 255, 232);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "OpenSans", sans-serif;
+    font-size: 1rem;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    min-height: 100vh;
+    background: var(--backgroundColor);
+    max-width: 800px; /* Vous pouvez ajuster la largeur maximale selon vos besoins */
+    margin: 0 auto; /* Centre la page horizontalement */
+  }
+  
+
+ 
+/* CSS */
+.big-button {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.big-button:hover {
+  background-color: #fff;
+}
+
+.big-button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .big-button {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+  
